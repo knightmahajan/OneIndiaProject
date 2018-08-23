@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="oneIndia.jnlp">
+  <information>
+    <title>oneIndia</title>
+    <vendor>KNIGHT  MAHAJAN</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-java-8.0.12.jar" size="2020431" download="eager" />
+    <jar href="oneIndia.jar" size="8151" download="eager" />
+  </resources>
+  <application-desc main-class="oneIndia.OneIndia"  name="oneIndia" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>
