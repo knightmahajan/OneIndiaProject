@@ -92,7 +92,7 @@ public class OneIndia extends Application implements dao
         label1.setTranslateX(20);
         ComboBox combo = new ComboBox();
         combo.setTranslateX(30);
-        for(int i=1;i<=10;i++)
+        for(int i=0;i<=10;i++)
         {
             combo.getItems().add(i);
         }
@@ -204,7 +204,7 @@ public class OneIndia extends Application implements dao
                     String g2 = dates.getValue().toString();
                     String g3 = combo.getSelectionModel().getSelectedItem().toString();
                     System.out.println(g + g1 + g2 + g3);
-                    stmt.executeUpdate("INSERT INTO ONEINDIA (SOURCE,DESTINATION,DATES,PASSENGERS) VALUES (''+g, ''+g1, ''+g2, ''+g3)");
+                    stmt.executeUpdate("insert into oneindia values(' " + g + " ' , ' " + g1 + " ' , ' " + g2 + " ' , ' " + g3 + " ')");
          stmt.close();
          con.close();
          System.out.println("submitted");
@@ -216,6 +216,8 @@ public class OneIndia extends Application implements dao
         jb1.setOnAction(key -> {
             textField1.setText("");
             textField.setText("");
+            combo.getSelectionModel().select(0);
+            dates.setValue(null);
         });
         
     }
