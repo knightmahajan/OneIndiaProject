@@ -19,4 +19,4 @@ It consists of following main sub-parts :-
  
  The entire data is fed and stored in MySql (phpMyadmin).
  
- 
+ For Output kindly refer the Screenshots folder. Thank You!
