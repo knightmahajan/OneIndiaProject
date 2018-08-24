@@ -19,4 +19,6 @@ It consists of following main sub-parts :-
  
  The entire data is fed and stored in MySql (phpMyadmin).
  
+ The JAR file is provided for convineance. 
+ 
  For Output kindly refer the Screenshots folder. Thank You!
